@@ -1,0 +1,5 @@
+<div *ngIf="serie != null">
+    <img src="{{ serie.imagen }}" /><br />
+    <h1>{{ serie.nombre }}</h1><br />
+    <a [routerLink]="['/personajes', serie.idSerie]" class="btn btn-success">Personajes</a>
+</div>
