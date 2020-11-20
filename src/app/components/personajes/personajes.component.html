@@ -1,0 +1,17 @@
+<a [routerLink]="['/serie', id]" class="btn btn-danger">Volver</a>
+<table *ngIf="id != ''" class="table table-dark">
+    <thead>
+        <tr>
+            <th>Personaje</th>
+            <th>Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of personajes">
+            <td>{{ person.nombre }}</td>
+            <td>
+                <img src="{{ person.imagen }}" />
+            </td>
+        </tr>
+    </tbody>
+</table>
